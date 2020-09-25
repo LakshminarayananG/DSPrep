@@ -7,7 +7,7 @@ import java.util.HashSet;
 
 import org.junit.Test;
 
-public class CommonElements {
+public class CommonElementsIn3Arrays {
 	
 	/*
 	 * Given three Integer arrays arr1, arr2, and arr3 sorted in strictly increasing

@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 import org.junit.Test;
 
-public class MultiplicationArray {
+public class ArrayMultiplication {
 
 	/*
 	 * Given an array nums of n integer where n is >1, return an array output such

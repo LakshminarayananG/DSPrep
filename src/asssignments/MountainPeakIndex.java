@@ -2,7 +2,12 @@ package asssignments;
 
 import org.junit.Test;
 
-public class MountainPeak {
+public class MountainPeakIndex {
+	
+	/*
+	 * Considerations for test data. Only 1 peak was considered since it was
+	 * mentioned in group that this is a single mountain peak
+	 */
 	
 	@Test
 	public void example1() {
