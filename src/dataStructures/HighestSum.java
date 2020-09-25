@@ -89,7 +89,6 @@ public class HighestSum {
 				window_sum+=numbers[i];
 			}
 			
-			
 			for(int i=num;i<numbers.length;i++) {
 				window_sum+=numbers[i]-numbers[i-num];
 				max_sum=Math.max(max_sum, window_sum);
