@@ -60,6 +60,17 @@ public class HighestSum {
 	}
 	
 	
+	@Test
+	public void example9() {
+		int[] inputarray = { 1, 4, 2, 10, 2, 3, 1, 0, 20 };
+		int num = 3;
+		int highestSum = highestSumSlideother(inputarray, num);
+		System.out.println(highestSum);
+	}
+	
+	
+	
+	//Brute force approach
 	private int highestSum(int[] inputarray, int num) {
 		int temp1, highestvalue = 0; //o[1]
 		while (num < inputarray.length && num > 1) { //O[1]
@@ -92,6 +103,27 @@ public class HighestSum {
 			for(int i=num;i<numbers.length;i++) {
 				window_sum+=numbers[i]-numbers[i-num];
 				max_sum=Math.max(max_sum, window_sum);
+			}
+			
+			return max_sum;
+		}
+	
+	
+	private int highestSumSlideother(int[] input, int sizeWindow) {
+		if(sizeWindow>1 && sizeWindow>input.length) {
+			throw new RuntimeException("Value of the number is outside of expected range");
+		}
+		int max_sum=0;
+			for(int i=0;i<sizeWindow;i++) {
+				max_sum+=input[i];
+			}
+			
+			int current_sum=max_sum;
+			for(int i=sizeWindow;i<input.length;i++) {
+				current_sum+=input[i]-input[i-sizeWindow];
+				if(current_sum>max_sum) {
+					max_sum=current_sum;
+				}
 			}
 			
 			return max_sum;

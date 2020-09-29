@@ -7,9 +7,19 @@ import org.junit.Test;
 
 public class LuckyInteger {
 	
+	/*
+	 * Given an array of integers, a lucky integer is an integer which has a
+	 * frequency in the array equal to its value. Return a lucky integer in the
+	 * array. If there are multiple lucky integers return the largest of them. If
+	 * there is no lucky integer return -1.
+	 * 
+	 * Input: [1,2,3,3,4,4,4,4,5] Output: 4 Explanation: 1, 2 and 4 are all lucky
+	 * numbers, but 4 is the largest
+	 */
+	
 	@Test
 	public void example1() {
-		int[] numbers= {0,2,3,4,4,4,5,5,6};
+		int[] numbers= {4,2,3,4,4,5,5,6};
 		int findLuckyNum = findLuckyNum(numbers);
 		System.out.println(findLuckyNum);
 	}
@@ -45,7 +55,7 @@ public class LuckyInteger {
 		
 	// Overall complexity --> O[1] + O[N] + O[N]
 	private int findLuckyNumOther(int[] numbers) {
-		Map<Integer,Integer> num = new HashMap<Integer,Integer>(); //O[1]
+		Map<Integer,Integer> num = new HashMap<Integer,Integer>(); 
 		int temp=-1; 
 		for (int i = 0; i < numbers.length; i++) {  //O[N]
 			num.put(numbers[i], num.getOrDefault(numbers[i],0)+1);
@@ -60,7 +70,7 @@ public class LuckyInteger {
 		
 	}
 	
-	//Brute Force
+
 	private int findLuckyNum(int[] numbers) {
 		Map<Integer,Integer> num = new HashMap<Integer,Integer>(); 
 		int temp=-1;

@@ -22,7 +22,7 @@ public class CommonElementsIn3Arrays {
 	 */
 	
 	/* Questions 
-	 * 1. Should all the array size be of same size
+	 * 1. Should all the array size be same
 	 * 2. Can it have negative numbers too
 	 * 3. Can it have duplicates
 	 * 
@@ -62,7 +62,16 @@ public class CommonElementsIn3Arrays {
 	@Test
 	public void example4() {
 		Integer[]arr1= {-4,-3,-2,2,3,4,8};
-		Integer[]arr2= {-4,-2,1,1,5,8,9};
+		Integer[]arr2= {-5,-4,1,1,5,8,9};
+		Integer[]arr3= {-4,0,1,3,5,6,8};
+		Object[] checkCommonElements = commonEleSetApproach(arr1, arr2, arr3);
+		System.out.println(Arrays.toString(checkCommonElements));
+	}
+	
+	@Test
+	public void example5() {
+		Integer[]arr1= {-6,-3,-2,2,3,4,6};
+		Integer[]arr2= {-5,-4,1,1,5,8,9};
 		Integer[]arr3= {-4,0,1,3,5,6,8};
 		Object[] checkCommonElements = commonEleSetApproach(arr1, arr2, arr3);
 		System.out.println(Arrays.toString(checkCommonElements));
@@ -70,10 +79,12 @@ public class CommonElementsIn3Arrays {
 	
 	
 	
-	//Worst brute force technique
+	//Brute force technique
 	public ArrayList<Integer> checkCommonElements(Integer[]arr1,Integer[]arr2,Integer[]arr3) {
 		ArrayList<Integer> commonelements= new ArrayList<Integer>();
 		boolean flag=false;
+		
+		
 		for(int i=0;i<arr1.length;i++) {
 			for(int j=0;j<arr2.length;j++) {
 				if(arr2[j]==arr1[i])
