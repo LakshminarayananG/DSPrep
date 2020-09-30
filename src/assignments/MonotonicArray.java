@@ -1,4 +1,4 @@
-package asssignments;
+package assignments;
 
 import org.junit.Test;
 
