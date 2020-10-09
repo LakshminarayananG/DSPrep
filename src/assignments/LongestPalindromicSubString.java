@@ -1,7 +1,10 @@
 package assignments;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
+
 import org.junit.Test;
 
 public class LongestPalindromicSubString {
@@ -68,22 +71,25 @@ public class LongestPalindromicSubString {
 	}
 
 
-	private int  palindromelongest(String input) {
-		int longest=0;
-		List<String> list = new ArrayList<String>();
-		for (int i = 0; i < input.length(); i++) {
-			for (int j = i + 1; j <= input.length(); j++) {
-				String str = input.substring(i, j);
-				if (str.equals(new StringBuilder(str).reverse().toString()))
-					list.add(str);
+	private int  palindromelongest(String str) {
+		Set<Character> set= new HashSet<Character>();
+		
+		for(int i=0;i<str.length();i++) {
+			if(set.contains(str.charAt(i))) {
+				set.remove(str.charAt(i));
+			}
+			else {
+				set.add(str.charAt(i));
 			}
 		}
-		for (String string : list) {
-			if(string.length()>longest) {
-				longest=string.length();
-			}
+		
+		if(set.size()<=1) {
+			return str.length();
 		}
-		return longest;
+		
+		else {
+			return str.length()-set.size()+1;
+		}
 	}
 
 }

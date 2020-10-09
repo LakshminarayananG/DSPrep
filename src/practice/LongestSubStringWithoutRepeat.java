@@ -1,6 +1,8 @@
 package practice;
 
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 import org.junit.Test;
 
@@ -21,6 +23,11 @@ public class LongestSubStringWithoutRepeat {
 	public void example3() {
 		String str = "pebdbfghi";
 		System.out.println(longestSubStringasc(str));
+	}
+	
+	public void example4() {
+		String str = "pebdbfghi";
+		longestsub(str);
 	}
 
 	private int longestSubString(String str) {
@@ -53,6 +60,22 @@ public class LongestSubStringWithoutRepeat {
             index[str.charAt(j-1)] = j;
         }
         return maxValue;
+	}
+	
+	
+	private void longestsub(String s) {
+		int max=0;
+		List<Character> list = new ArrayList<Character>();
+		for (int i = 0; i < s.length(); i++) {
+			if(list.contains(s.charAt(i))) {
+				max=Math.max(max, list.size());
+				list.clear();
+			}
+			list.add(s.charAt(i));
+			max=Math.max(max, list.size());
+			
+		}
+		System.out.println(max);
 	}
 
 }
