@@ -22,9 +22,9 @@ public class SumIndices {
 
 	@Test
 	public void example3() {
-		int[] numbers = { 2, 3, 5, 1, 4, 7, 5, 19, 0, -2, 2, 1, 3 };
-		int target = 6;
-		int[] indices = getIndices(numbers, target);
+		int[] input = {1,3,4,7,10,12};
+		int target = 14;
+		int[] indices = getIndices(input, target);
 		System.out.println(Arrays.toString(indices));
 	}
 

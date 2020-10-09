@@ -10,7 +10,6 @@ public class Anagrams {
 		String samp="abccbaccbbaacbbcacb";
 		String anagram="abc";
 		findanagram(samp,anagram);
-		
 	}
 	
 	private void findanagram(String input,String anag) {

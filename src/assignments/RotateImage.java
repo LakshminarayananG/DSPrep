@@ -8,7 +8,9 @@ import org.junit.Test;
 		/*
 		 * Rotate an image
 		 * 
-		 * Input: matrix = [[1,2,3],[4,5,6],[7,8,9]] Output: [[7,4,1],[8,5,2],[9,6,3]]
+		 * Input: matrix = [[1,2,3],[4,5,6],[7,8,9]] Output: [[7,4,1],
+		 * 													  [8,5,2],
+		 * 										              [9,6,3]]
 		 */
 	
 		@Test
@@ -36,6 +38,25 @@ import org.junit.Test;
 			System.out.println(Arrays.deepToString(input));
 			System.out.println(Arrays.deepToString(output));
 		}
+		
+		
+		
+		@Test
+		public void eg5() {
+			int[][] input = new int[][] { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
+			int[][] output = rotateImage1(input);
+			System.out.println(Arrays.deepToString(input));
+			System.out.println(Arrays.deepToString(output));
+		}
+	
+		
+		@Test
+		public void eg6() {
+			int[][] input = new int[][] { { 1, 2, 3 }, { 4, 5, 6 }};
+			int[][] output = rotateImage1(input);
+			System.out.println(Arrays.deepToString(output));
+		}
+	
 	
 	
 	
@@ -61,4 +82,24 @@ import org.junit.Test;
 			}
 			return newarr;
 		}
+		
+		
+		private int[][] rotateImage1(int[][] input) {
+			int[][] newarr = new int[input[0].length][input.length];
+			
+			for (int i = 0; i <input[0].length; i++) {
+				int temp = 0;
+				for (int j = input.length-1; j >=0; j--) {
+					newarr[i][temp] = input[j][i];
+					temp++;
+				}
+			}
+			return newarr;
+		}
+		
+		
+		
+		
+		
+		
 	}

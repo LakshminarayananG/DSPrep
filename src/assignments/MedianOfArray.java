@@ -28,28 +28,28 @@ import org.junit.Test;
 	// Output: 2.5
 	
 	
-	//Median-Sum of all numbers/Total Number of numbers
-	//Also equal to n+1/2(middle number) or n+(n+1)/2 (average of middle numbers), if the numbers are sorted.
+	
+	
 	//DataSets
 	@Test
 	public void eg1() {
 		int[] inputOne = { 1, 3 };
 		int[] inputTwo = { 2 };
-		System.out.println("One: " + String.format("%.2f", findMedian1(inputOne, inputTwo)));
+		System.out.println("One: " + String.format("%.1f", findMedian1(inputOne, inputTwo)));
 	}
 
 	@Test
 	public void eg2() {
-		int[] inputOne = { 1, 2 };
+		int[] inputOne = { 8, 2 };
 		int[] inputTwo = { 3, 4 };
-		System.out.println("Two: " + String.format("%.2f", findMedian1(inputOne, inputTwo)));
+		System.out.println("Two: " + String.format("%.1f", findMedian1(inputOne, inputTwo)));
 	}
 
 	@Test
 	public void eg3() {
 		int[] inputOne = { 1, 2, 7, 9, 10 };
 		int[] inputTwo = { 3, 4, 11, 56, 88, 90 };
-		System.out.println("Three: " + String.format("%.2f", findMedian1(inputOne, inputTwo)));
+		System.out.println("Three: " + String.format("%.1f", findMedian1(inputOne, inputTwo)));
 
 	}
 	@Test
@@ -57,7 +57,7 @@ import org.junit.Test;
 	{
 	int[] inputOne= {-1,2};
 	int[] inputTwo= {3,4,5};
-	System.out.println("Four: "+String.format("%.2f", findMedian1(inputOne,inputTwo)));
+	System.out.println("Four: "+String.format("%.1f", findMedian1(inputOne,inputTwo)));
 	
 	}
 	@Test
@@ -70,13 +70,13 @@ import org.junit.Test;
 	
 	//Solution 1
 	
-	//1. Create a new Array of length equal to the length of array One and Array Two
-	//2. Loop through the first array and add all elements to the new array
-	//3. Loop through the second array and add all elements to the new array
-	//4. sort the array using inbuilt function from collections
-	//5. Determine the length of array list
-	//6. if odd, return n/2
-	//7.if even return (n/2+(n+1)/2)2, where n is the element at the respective index
+	
+	//1. Loop through the first array and add all elements to the new array
+	//2. Loop through the second array and add all elements to the new array
+	//3. sort the array using inbuilt function from collections
+	//4. Determine the length of array list
+	//5. if odd, return n/2
+	//6.if even return (n/2+(n+1)/2)2, where n is the element at the respective index
 	
 	private float findMedian1(int[] firstInput, int[] secondInput) {
 		List<Integer> combinedArray = new ArrayList<>();

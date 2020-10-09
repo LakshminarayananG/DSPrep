@@ -46,6 +46,26 @@ public class ReverseWave {
 	List<Integer> out = reverseWave(input, rowcount, colcount);
 	System.out.println(out);
 	}
+	
+	@Test
+	public void eg4() {
+	int[][] input = new int[][] { { 1, 2, 3, 4 }, { 5, 6, 7, 8 }};
+	int rowcount = input.length;
+	int colcount = input[0].length;
+	List<Integer> out = reverseWave(input, rowcount, colcount);
+	System.out.println(out);
+	}
+
+	
+
+	@Test
+	public void eg5() {
+	int[][] input = new int[][] { { 1, 2, 3,}, { 4, 5, 6},{7,8,9}};
+	int rowcount = input.length;
+	int colcount = input[0].length;
+	twoPointerAlgorithm(input);
+	
+	}
 
 	// Brute Force technique
 	/*
@@ -62,35 +82,69 @@ public class ReverseWave {
 	*/
 
 	private List<Integer> reverseWave(int[][] input, int rowcount, int colcount) {
-	boolean flag = true;
-	int temp = colcount - 1;
-	int val = 0;
-	List<Integer> output = new ArrayList<Integer>();
+		boolean flag = true;
+		int temp = colcount - 1;
+		int val = 0;
+		List<Integer> output = new ArrayList<Integer>();
 
-	while (val <= colcount - 1) {
-	if (flag == true) {
-	for (int i = 0; i <= rowcount - 1; i++) {
-	// System.out.print(input[i][temp]+" ");
-	output.add(input[i][temp]);
-	}
-	temp -= 1;
-	flag = false;
-	}
+		while (val <= colcount - 1) {
+			if (flag == true) {
+				for (int i = 0; i <= rowcount - 1; i++) {
+					output.add(input[i][temp]);
+				}
+				temp -= 1;
+				flag = false;
+			}
 
-	else if (flag == false) {
-	for (int j = rowcount - 1; j >= 0; j--) {
-	// System.out.print(input[j][temp]+" ");
-	output.add(input[j][temp]);
-	}
-	temp -= 1;
-	flag = true;
-	}
-	val++;
-	}
+			else if (flag == false) {
+				for (int j = rowcount - 1; j >= 0; j--) {
+					output.add(input[j][temp]);
+				}
+				temp -= 1;
+				flag = true;
+			}
+			val++;
+		}
 
-	return output;
+		return output;
 
 	}
 
+	
+	private void twoPointerAlgorithm(int[][] input) {
+		boolean downwardDirection = false;
+
+		for (int i = input[0].length-1 ; i >= 0; i--) {
+			downwardDirection= !downwardDirection;
+			if(downwardDirection) {
+				int firstIndex = 0 , secondIndex=1;
+				while(firstIndex < input.length || secondIndex < input.length) {
+//					counter++;
+					if(firstIndex < input.length )
+						System.out.print(input[firstIndex][i]+",");
+					if(secondIndex < input.length)
+						System.out.print(input[secondIndex][i]+",");
+					firstIndex+= 2;
+					secondIndex+= 2;
+				}
+			}else {
+				int firstIndex = input.length-1 , secondIndex=firstIndex-1;
+				while(firstIndex >=0 || secondIndex >=0) {
+//					counter++;
+					if(firstIndex >=0 )
+						System.out.print(input[firstIndex][i]+",");
+					if(secondIndex >=0)
+						System.out.print(input[secondIndex][i]+",");
+					firstIndex-= 2;
+					secondIndex-= 2;
+				}
+
+			}
+		}		
+//		System.out.println("two pointer counter "+counter);
+	}	
+	
+	
+	
 
 }

@@ -21,8 +21,6 @@ public class CharSwap {
 		Arrays.sort(temp);
 		System.out.println(String.valueOf(temp));
 		int val=input.length();
-		
-		
 	}
 	
 	

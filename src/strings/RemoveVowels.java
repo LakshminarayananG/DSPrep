@@ -16,7 +16,6 @@ public class RemoveVowels {
 	private String remove(String s) {
 		return s.replaceAll("[aeiouAEIOU]","");
 		
-		
 	}
 
 }

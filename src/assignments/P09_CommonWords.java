@@ -16,9 +16,9 @@ public class P09_CommonWords {
 	Input: "Stale are there in tesla and you can steal the pears";
 	Output: [Stale, Tesla, Steal]*/
 
-	// @Test
+	@Test
 	public void eg1() {
-		String s1 = "this stale are there in tesla and you can steal the pears";
+		String s1 = "this stale are there in tesla and you can steal the pear and reap";
 		Set<String> output = possiblewords(s1);
 		System.out.println(output);
 	}
@@ -88,22 +88,22 @@ public class P09_CommonWords {
 	7. return the set*/
 
 	private Set<String> possiblewords(String input) {
-		String[] split = input.toLowerCase().split(" ");
+		String[] inputSplitWords = input.toLowerCase().split(" ");
 
-		for (int i = 0; i < split.length; i++) {
-			String[] spt = split[i].split("");
-			Arrays.sort(spt);
-			split[i] = String.join("", spt);
+		for (int i = 0; i < inputSplitWords.length; i++) { // O[N]
+			String[] eachwordsplit = inputSplitWords[i].split("");
+			Arrays.sort(eachwordsplit);   					// O[log(n)]
+			inputSplitWords[i] = String.join("", eachwordsplit);
 		}
 
 		Map<String, Integer> map = new HashMap<String, Integer>();
 		Set<String> set = new HashSet<String>();
-		for (int i = 0; i < split.length; i++) {
-			if (map.containsKey(split[i])) {
-				set.add(input.split(" ")[map.get(split[i])]);
+		for (int i = 0; i < inputSplitWords.length; i++) {
+			if (map.containsKey(inputSplitWords[i])) {
+				set.add(input.split(" ")[map.get(inputSplitWords[i])]);
 				set.add(input.split(" ")[i]);
 			} else
-				map.put(split[i], i);
+				map.put(inputSplitWords[i], i);
 
 		}
 		return set;

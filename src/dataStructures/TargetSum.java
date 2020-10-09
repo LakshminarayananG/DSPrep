@@ -1,18 +1,20 @@
 package dataStructures;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 import org.junit.Test;
 
 public class TargetSum {
 	
-	/*
-	 * @Test public void example1() { int[] numbers= {1,3,4,5,2,7,8}; int target=7;
-	 * findTargetHashing(numbers, target);
-	 * //System.out.println(Arrays.toString(findtargetSum));
-	 * 
-	 * }
-	 */
+	
+	  @Test public void example1() { int[] numbers= {1,2,4,5,3,8,10,1,5};
+		int target=16;
+	 // findTargetHashing(numbers, target);
+	 System.out.println(Arrays.toString(findtargetSum(numbers,target)));
+	  
+	  }
+	 
 	
 	@Test
 	public void example2() {

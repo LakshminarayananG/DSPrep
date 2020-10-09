@@ -49,7 +49,7 @@ public class SortColours {
 
 	@Test
 	public void eg3() {
-		int[] input = { 2, 0, 1 };
+		int[] input = { 2, 2,0, 1 };
 		Object[] sortedoutput = sort(input);
 		System.out.println(Arrays.toString(sortedoutput));
 	}
