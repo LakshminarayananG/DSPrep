@@ -1,6 +1,5 @@
 package assessment;
 
-import java.io.InputStream;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
@@ -59,12 +58,18 @@ public class Prob2_RiverRecords {
 		Integer[] input = {4, 5, 6, 11,2,10,1,6 };
 		System.out.println("Four : " + river2(input));
 	}
+	
+	@Test
+	public void eg5() {
+		Integer[] input = {2,2,2,2,2,2};
+		System.out.println("Five : " + river2(input));
+	}
 
 	private int river1(int[] input) {
 		int maxdiff = -1;
 		for (int i = 0; i < input.length; i++) {
 			for (int j = i + 1; j < input.length; j++) {
-				if (input[j] > input[i]) {
+				if (input[j] >= input[i]) {
 					maxdiff = Math.max(input[j] - input[i], maxdiff);
 				}
 			}
@@ -84,7 +89,7 @@ public class Prob2_RiverRecords {
 		}
 		
 		for(int i=maxpointer+1;i<input.length;i++) {
-			if(list.get(i)>list.get(i-1)) {
+			if(list.get(i)>=list.get(i-1)) {
 			maxdiff=Math.max(list.get(i)-list.get(i-1), maxdiff);
 			}
 		}

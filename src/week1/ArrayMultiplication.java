@@ -1,4 +1,4 @@
-package assignments;
+package week1;
 
 import java.util.Arrays;
 import org.junit.Test;

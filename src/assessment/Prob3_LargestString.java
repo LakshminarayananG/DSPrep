@@ -70,7 +70,7 @@ public class Prob3_LargestString {
 		referenceMap.keySet().toArray(tempArray);
 		//Sort the array
 		Arrays.sort(tempArray);
-		int temp=0;int addedCount=0;
+	int addedCount=0;
 		
 		//Loop over the array of distinct elements(Form last to zero index)
 		for(int i=tempArray.length-1;i>0;i--)

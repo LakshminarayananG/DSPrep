@@ -45,8 +45,7 @@ public class RotateAnArray {
 		int temp= input.length-rotate;
 		rotate(input, 0, temp-1);
 		rotate(input,temp, input.length-1);		
-		rotate(input,0,input.length-1);
-		
+		rotate(input,0,input.length-1);		
 		return input;
 		
 	}

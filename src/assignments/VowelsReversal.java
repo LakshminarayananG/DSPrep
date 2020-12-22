@@ -10,14 +10,14 @@ public class VowelsReversal {
 	
 	@Test
 	public void eg1() {
-		String input="Bab";
+		String input="testleaf";
 		System.out.println(reverse(input));
 	}
 	
 	
 	@Test
 	public void eg2() {
-		String input="winnerofcode";
+		String input="testleaf";
 		System.out.println(reverse2Point(input));
 	}
 	
