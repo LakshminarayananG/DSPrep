@@ -9,9 +9,7 @@ public class MaxPossibleValue {
 			 * -> output -5661
 			 */
 		
-			/*
-			 * Pseudo code: 1. Iterate through the
-			 */
+			
 		
 			@Test
 			public void eg1() {
