@@ -48,7 +48,7 @@ public class Counting_Pairs {
 	public void eg2() {
 		List<Integer> list = new ArrayList<>(Arrays.asList(1,2,3,4,5,6));
 		int k=2;
-		System.out.println(countPairs(list, k));
+		System.out.println(countPair(list, k));
 	}
 	
 	private int countPairs(List<Integer> list, int k ) {
@@ -73,6 +73,22 @@ public class Counting_Pairs {
 		}
 		return count;
 		
+	}
+	
+	
+	private int countPair(List<Integer> list, int k) {
+		int count = 0;
+        Set<Integer> set = new HashSet<>();
+        set.addAll(list);
+        for (Integer integer : list) {
+            if (set.contains(integer + k)) {
+                count++;
+                set.remove(integer+k);
+            }
+        }
+        return count;
+
+    
 	}
 
 }
