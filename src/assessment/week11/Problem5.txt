@@ -1,0 +1,41 @@
+Problem:
+Write test data enumeration for any URL.
+
+Protocol:
+http / https
+
+Query String/ Domain name:
+google.com
+
+
+Sub Domain/ Path
+gmail.com/signin
+
+Region
+.com / .in 
+
+Static / Dynamic Page
+static pages: help link articles
+dynamic pages: content changes based on user interaction
+
+Test Data:
+https://www.google.com
+http://www.google.com
+https://www.google.in
+https://www.google.com/signin
+https://www.gmail.com/about-us.html
+
+
+
+
+
+5) Write test data enumeration for any URL. 
+
+
+1) Verify whether URL has valid endpoint
+https://google.com
+https://google.co.in
+2) Verify whether URL has valid resource and parameters
+https://google.com/search?q=testing
+3) Verify whether URL has invalid parameters which is not in server
+https://google.com?qry="testing"

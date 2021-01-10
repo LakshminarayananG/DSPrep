@@ -1,0 +1,47 @@
+Whenever you are trying to set an alarm in your mobile phone, the phone is getting switched off.
+How will you debug this issue?
+
+
+Discovery:
+1. Issue when trying to set an alarm
+2. From when is this issue happening
+
+Possible causes & solutions:
+1. Is it the first time this issue is happening, if yes, check for device logs if possible
+2. Has there been any recent OS update on the device, if yes, check if its possible to revert to older version of OS
+3. Are there multiple apps running at the same time when setting an alarm, if yes, close other apps and try
+4. Is the battery % low when trying to set the alarm, if yes, charge fully and try setting alarm
+5. Is the phone getting too hot when trying to set alarm, if so, try setting alarm when CPU utilization is low
+6. Do we have the access to adb logs to see the device logs, if yes, check for error logs
+7. Is it happening only in this device, if so check with any other device, if only on this device, try setting in 
+other devices
+8. Is it happening only when trying to use only alarm app or any other app,
+9. Is it happening only when trying to set in build alarm app or external alarm app
+
+
+
+
+********************************************************************
+
+Preliminary questions:
+1. Was phone battery is low while setting alarm?
+2. Is restart happening after setting or while setting alarm
+3. Is this observed in default app or third party app
+4. Is this observed in local time or other time zone
+5. Was this working fine before?
+if yes,
+a. Was this working fine in previous app build?
+b. Was this working fine in previous OS build?
+6. Is this issue observed only in this app or is it affecting other app
+
+Software:
+1. Check whether other background apps consuming power
+2. Check whether alarm code conficts with other app
+3. Check whether alarm can be set without switch off in another mobile with same configuration
+4. Try to reset (settings/software) of the mobile and try setting alarm
+
+Hardware:
+1. Check battery health
+2. Check the timer circuit
+3. Check the touch screen sensor causing some short circuit
+

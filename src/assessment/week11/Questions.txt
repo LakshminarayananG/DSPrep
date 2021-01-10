@@ -1,0 +1,18 @@
+[60 Minutes]
+- You need to attempt all questions ethically
+- It will help me to understand where are you strong and where you may need assistance
+1) Write the edge cases for the automated car driving system [Minimum 5 testcases]
+2) Find the second least character in a given string
+  Example:
+  Input: "tesla-service" Output: s 
+     a) If there are more than one match, return the last match "aabbccc" -> 'b'
+     b) If there are no second match, return ''
+3) Given an input array and two unique numbers, find the smallest distance between those 2 numbers
+   Example:a
+   
+   Input1: [5,6,8,9,1,4,1] Input2: 8,1 Output: 2
+      a) If there are no occurances of the unique numbers, then throw exception
+      b) If there are multiple matches, the least distance should be considered
+4) The amazon.com website working in South Carolina but stopped working in North Carolina. 
+How will you debug?
+5) Write test data enumeration for any URL. 

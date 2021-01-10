@@ -1,0 +1,28 @@
+prefix@domain.extension
+
+Invalid Prefix:
+Starts with special characters (_.-) -  .valid@gmail.com
+Starts with number/characters, followed by continuous special characters - soor__@gmail.com
+Having not allowed special characters like #,@ - soo@@gmail.com
+
+Invalid Domain:
+
+Having invalid special characters - soor@gmail#.com
+Having multiple continuous special characters - soor@gmail..com
+
+
+Invalid extensions
+
+Having single digit extension - soor@gmail.c
+Having extension with special characters - soor@gmail.c#
+
+
+Valid Prefix,domain & extension:
+with valid special characters - Soor-1@gmail.com
+
+
+
+
+
+
+

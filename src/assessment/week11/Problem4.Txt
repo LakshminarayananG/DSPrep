@@ -1,0 +1,33 @@
+Problem:
+The amazon.com website working in South Carolina but stopped working in North Carolina. How will you debug?
+
+Discovery:
+1. From when did it stop working
+
+
+Possible Causes:
+Region Based / Application
+1. Are there only specific set of users facing issue in NC or all users in NC are facing the issue
+2. Was it working earlier seamlessly in both the region
+3. is traffic to both regions connected to common server
+4. Was there any specific changes done recently to test it from NC region
+5. Any hardware changes done for the server routing traffic to NC
+6. Any hardware damage / natural disaster for NC region
+
+
+Users Based:
+1. Are all users facing the issue / users from specific region facing the issue 
+
+
+
+
+4) The amazon.com website working in South Carolina but stopped working in North Carolina. 
+How will you debug?
+
+Check whether this is affecting for a customer or in an area or whole state,
+1) Check whether the system is connected to active internet
+2) Check whether the system is connected to any private network
+3) Check whether any government restriction is applied to block amazon
+4) Check whether address is routed to the server when "amazon.com" is hit 
+5) Check whether response time is exceeding the actual response time
+6) Check whether the Amazon server is down

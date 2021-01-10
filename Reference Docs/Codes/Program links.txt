@@ -1,0 +1,8 @@
+Sliding window:
+https://leetcode.com/problems/find-all-anagrams-in-a-string/discuss/92007/sliding-window-algorithm-template-to-solve-all-the-leetcode-substring-search-problem
+
+Backtracking:
+https://leetcode.com/problems/permutations/discuss/18239/a-general-approach-to-backtracking-questions-in-java-subsets-permutations-combination-sum-palindrome-partioning
+
+Recursion:
+https://leetcode.com/explore/learn/card/recursion-ii/472/backtracking/2654/

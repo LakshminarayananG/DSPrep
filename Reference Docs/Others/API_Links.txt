@@ -1,0 +1,46 @@
+from Babu Manickam to everyone:    3:24 PM
+https://developer.servicenow.com/dev.do#!/reference/api/orlando/rest/c_TableAPI
+from Babu Manickam to everyone:    3:24 PM
+https://dev96572.service-now.com/
+from Babu Manickam to everyone:    3:24 PM
+admin / Tuna@123
+
+
+
+https://dev96572.service-now.com/api/now/table
+
+https://dev96572.service-now.com/api/now/table/problem
+
+
+1) Create a Collection
+2) Create a new Request for Problem
+    a) Create a new problem with body as json -> problem_statement (POST)
+    b) Use that problem id to confirm it is created from GET
+End Point: https://dev96572.service-now.com/api/now/table/problem
+Username: admin Password: Tuna@123
+
+
+Debugging:
+avoid server down during platform upgrade:
+(infrastructure simulation - by optimized combination) prod snapshot -> scale it down by sampling
+os/software integration touchpoint
+historical defect analysis > find env defect and analyse it
+taking to BA
+
+
+1) Write a RestAssured code
+    a) to retrieve all the change requests and print only the change request number and associated sys_id
+    b) get the response in XML format and print the size of the response
+    c) print the CR that are created only today !!
+	
+	
+https://api-mar2020.atlassian.net/
+Web 
+Username: rajalakshmi.govindarajan@testleaf.com
+Password: Tuna@321
+API
+Username: rajalakshmi.govindarajan@testleaf.com
+API Key (Password): aCSqLUfk0WgNwrCQcHfoF832
+
+
+https://cloud.google.com/apis/design/resources

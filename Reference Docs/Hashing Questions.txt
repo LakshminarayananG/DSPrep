@@ -1,0 +1,471 @@
+1) Find the duplicate characters in the string
+Input: abccdddefghh
+Output: c,d,h
+
+2) Find duplicates in integer array
+Input: [2, 1, 3, 1, 3, 1, 4 ]
+Output: [1,3]
+
+3) Given an array of integers, a lucky integer is an integer which has a frequency in the array equal to its value.
+
+Return a lucky integer in the array. If there are multiple lucky integers return the largest of them. If there is no lucky integer return -1.
+
+Input: [1,2,3,3,4,4,4,4,5]
+Output: 4
+Explanation: 1, 2 and 4 are all lucky numbers, but 4 is the largest
+
+4) Given two strings s1 and s2, write a function to return true if s2 contains the permutation of s1. 
+In other words, one of the first string's permutations is the substring of the second string.
+
+Example 1:
+
+Input: s1 = "ab" s2 = "eidbaooo"
+Output: True
+Explanation: s2 contains one permutation of s1 ("ba").
+Example 2:
+
+Input:s1= "ab" s2 = "eidboaoo"
+Output: False
+
+5) Given 2 Strings with length n and (n+1) respectively. 
+The second String contains all the characters of first but with an extra char. Write the code to find the extra char
+
+Example 1:
+Input:
+A1 = "Test"
+A2 = "Test$"
+Output: '$'
+
+Example 2:
+Input:
+A1 = "Hello"
+A2 = "lloreH"
+Output: 'r'
+
+6) Write a program that tells all the words containing same letters(anagram)
+Input  : "Stale are there in tesla and you can steal the pears"
+Output : [Stale, tesla, steal]
+
+7) Find all subarrays in the given integer array whose sum matching target
+Input: [1, 7, 4, 3, 4, 1, 2, 5, 1]
+Target: 7
+Output: [[1,1], [2,3], [3,4], [4,6], [6,7]]
+
+8) Find any substring in input string is anagram of the target string
+Input: acbbabccaabcab
+Target: abc
+Output: true
+
+9) Find unique characters in string
+Input: Testleaf
+Output: [s,l,a,f]
+
+10) Remove vowels from given string
+Input: Testleaf
+Output: Tstlf
+
+11) Find second least repeating character in the string
+Input: paypal
+Output: y or l
+
+12) Longest substring without repeating characters
+
+Input: s="abcabcbb"
+Output: 3
+Explanation: The answer is "abc", with the length of 3
+
+Input: s="bbbbb"
+Output: 1
+Explanation: The aswer is "b", with the length of 1
+
+Input: s="pwwkew"
+Output: 3
+Explanation: The answer is "wke", with the length of 3
+
+Notice that the answer must be a substring, "pwke" is a subsequence not a substring.
+
+13) Given a string, find the length of the longest substring T that contains at most k distinct characters.
+e.g.:
+Input: s="eceba", k=2
+Output: 3
+Explanation: T is "ece" which its length is 3
+
+e.g.:2
+Input: s="aa", k=1
+Output: 2
+Explanation: T is "aa" which its length is 2
+
+14) A strobogrammatic number is a number that looks the same when rotated 180 degrees (looked at upside down).
+Write a function to determine if a number is strobogrammatic. The number is represented as a string.
+For example, the numbers "69", "88", and "818" are all strobogrammatic.
+
+15) Find if s1 is anagram of s2
+s1=anagram
+s2=nagaram
+Output: true
+
+16) Given the integer array, return index of 2 digits whose sum matches the k
+Input: [2, 1, 3, 4]
+k=5
+Output: [[0, 2], [1, 3]]
+
+17) Given a string which contains same set of alphabets in both upper and lower case, swap the alphabets to get the alphabets of both the cases to appear together. Retain the order of first occurrence of any alphabet.
+e.g.: 
+Input: BdAcbCaD
+Output: BbdDAacC
+
+18) Find the second least character in a given string
+  Example:
+  Input: "tesla-service" Output: s 
+     a) If there are more than one match, return the last match "aabbccc" -> 'b'
+     b) If there are no second match, return ''
+	 
+19) Find most frequent element in array
+Input: 4521542101 Output: 1 is repeated 3 times
+Input: 1234234 Output: 2,3,4 are repeated 2 times
+
+20) Given an array of positive integers, find the minimum length ascending subsequence such that after removing this subsequence from the array, the remaining array contains only unique integers. Only one subsequence will have the minimum length (no ties). If there is no such subsequence, return [-1].
+
+Example
+n = 7
+arr = [2, 1, 3, 1, 4, 1, 3]
+After removing the subsequence [1, 1, 3], the remaining array of distinct integers is [2, 3, 4, 1]. The subsequence [1, 1, 3] is the shortest ascending subsequence with this property, so it is returned.
+
+Sample Case 0
+Sample Input For Custom Testing
+STDIN Function
+----- --------
+4 → arr[] size n = 4
+1 → arr[] = [1, 1, 1, 3]
+1
+1
+3
+Sample Output
+1
+1
+Explanation
+The input array is [1, 1, 1, 3]. After removing the subsequence [1, 1], the remaining array is [1, 3] which contains only unique integers. There is no shorter subsequence with that property.
+
+Sample Case 1
+Sample Input For Custom Testing
+STDIN Function
+----- --------
+5 → arr[] size n = 5
+3 → arr[] = [3, 2, 2, 1, 1]
+2
+2
+1
+1
+Sample Output
+-1
+Explanation
+The input array is [3, 2, 2, 1, 1]. The example does not contain any ascending subsequence such that after removing it, the array contains only unique integers.
+
+21) Find uncommon characters of 2 strings
+s1=amazon
+s2=india
+Output: [z, m, o, d, i]
+
+22) Given a string comprised of lowercase letters in the range ascii[a-z], find the length shortest substring that contains at least one of each of the letters in the string.
+
+Example
+givenString = dabbcabcd
+The list of all characters in the string is [a, b, c, d]. Two of the substrings that contain all letters are dabbc and abcd. The shortest substring that contains all of the letters is 4 characters long. Return 4 as the answer.
+
+23) For a given array of transactions, group all of the transactions by item name. Return an array of strings where each string contains the item name followed by a space and the number of associated transactions.
+Note: Sort the array descending by transaction count, then ascending alphabetically by item name for items with matching transaction counts.
+
+Example
+transactions = ['notebook', 'notebook', 'mouse', 'keyboard', 'mouse']
+There are two items with 2 transactions each: 'notebook' and 'mouse'. In alphabetical order, they are 'mouse', 'notebook'. There is one item with 1 transaction: 'keyboard'. The return array, sorted as required, is ['mouse 2', 'notebook 2', 'keyboard 1'].
+
+Sample Case 0
+Sample Input
+STDIN Function
+----- -----
+4 → transactions[] size n = 4
+bin → transactions = ['bin', 'can', 'bin', 'bin']
+can
+bin
+bin
+Sample Output
+bin 3
+can 1
+Explanation
+There is one item 'bin' with 3 transactions. There is one item 'can' with 1 transaction. The return array sorted descending by transaction count, then ascending by name is ['bin 3', 'can 1'].
+
+Sample Case 1
+Sample Input
+STDIN Function
+----- -----
+3 → transactions[] size n = 3
+banana → transactions = ['banana', 'pear', 'apple']
+pear
+apple
+Sample Output
+apple 1
+banana 1
+pear 1
+
+Explanation
+There is one item 'apple' with 1 transaction. There is one item 'banana' with 1 transaction. There is one item 'pear' with 1 transaction. The return array sorted descending by transaction count, then ascending by name is ['apple 1', 'banana 1', 'pear 1'].
+
+24) Given an array of integers and an integer k, find out whether there are two distinct indices i and j in the array such that nums[i] = nums[j] 
+and the absolute difference between i and j is at most k.
+Example 1:
+Input: nums = [1,2,3,1], k = 3
+Output: true
+Example 2:
+Input: nums = [1,0,1,1], k = 1
+Output: true
+Example 3:
+Input: nums = [1,2,3,1,2,3], k = 2
+Output: false
+Example 3:
+Input: nums = [1,2,3,2,2,3], k = 2
+Output: true
+Hint: Window Sliding+Hashing
+
+25) Given a pattern and a string s, find if s follows the same pattern.
+Here follow means a full match, such that there is a bijection between a letter in pattern and a non-empty word in s.
+Example 1:
+Input: pattern = "abba", s = "dog cat cat dog"
+Output: true
+Example 2:
+Input: pattern = "abba", s = "dog cat cat fish"
+Output: false
+Input: pattern = "abc", s = "hello world world"
+Output: false
+Algorithm: HashMap 
+
+26) Given a string s that consists of only upper case letters, you can perform at most k operations on that string.
+In one operation, you can choose any character of the string and change it to any other upper case character.
+Find the length of the longest sub-string containing all repeating letters you can get after performing the above operations.
+Example 1:
+Input:
+s = "ABAB", k = 2
+Output:
+4
+Explanation:
+Replace the two 'A's with two 'B's or vice versa.
+Example 2:
+Input:
+s = "AABABBA", k = 1
+Output:
+4
+Explanation:
+Replace the one 'A' in the middle with 'B' and form "AABBBBA".
+The substring "BBBB" has the longest repeating letters, which is 4.
+
+27) Given a string s and an integer k.
+Return the maximum number of vowel letters [exact first match] in any substring of s with length k.
+Vowel letters in English are (a, e, i, o, u).
+Example 1:
+Input: s = "abciiidef", k = 3
+Output: iii
+Explanation: The substring "iii" contains 3 vowel letters.
+Example 2:
+Input: s = "aeiou", k = 2
+Output: ae
+
+28) Given 2 strings, find all the start indices of second string anagrams in first string.
+Note:
+Strings consists of lowercase letters only 
+The order of output does not matter.
+Input:
+s: "abab" p: "ab"
+Output:
+[0, 1, 2]
+Input:
+s: "testetr" p: "te"
+Output:
+[0, 3, 4]
+Sliding Window + HashMap 
+
+29) Given an array nums of n integers, are there elements a, b, c in nums such that a + b + c = 0? Find all unique triplets in the array which gives the sum of zero.
+Note that the solution set must not contain duplicate triplets.
+
+Example 1:
+Input: nums = [-1,0,1,2,-1,-4]
+Output: [[-1,-1,2],[-1,0,1]]
+
+Example 2:
+Input: nums = []
+Output: []
+
+30) Given an array of strings strs, group the anagrams together. You can return the answer in any order.
+Example 1:
+Input: strs = ["eat","tea","tan","ate","nat","bat"]
+Output: [["bat"],["nat","tan"],["ate","eat","tea"]]
+
+31) Given a paragraph and a list of banned words, return the most frequent word that is not in the list of banned words. It is guaranteed there is at least one word that isn't banned, and that the answer is unique. Words in the list of banned words are given in lowercase, and free of punctuation.  Words in the paragraph are not case sensitive. The answer is in lowercase.
+
+Example:
+Input: 
+paragraph = "Bob hit a ball, the hit BALL flew far after it was hit."
+banned = ["hit"]
+Output: "ball"
+Explanation: 
+"hit" occurs 3 times, but it is a banned word.
+"ball" occurs twice (and no other word does), so it is the most frequent non-banned word in the paragraph. 
+Note that words in the paragraph are not case sensitive,
+that punctuation is ignored (even if adjacent to words, such as "ball,"), 
+and that "hit" isn't the answer even though it occurs more because it is banned.
+
+Note:
+1 <= paragraph.length <= 1000.
+0 <= banned.length <= 100.
+1 <= banned[i].length <= 10.
+The answer is unique, and written in lowercase (even if its occurrences in paragraph may have uppercase symbols, and even if it is a proper noun.)
+paragraph only consists of letters, spaces, or the punctuation symbols !?',;.
+There are no hyphens or hyphenated words.
+Words only consist of letters, never apostrophes or other punctuation symbols.
+
+32) Sort based on another String
+Given one string ('abbceeeg') sort it based on another string ('egbca') 
+Result will be: 'eeegbbca'
+Do it less O[N2] => O[nlogn] => O[N]
+String s1 ="abbceeeg";
+String s2 = "egbca";
+Lowercase Alphabets
+No built sort functions !!
+
+32) You're given strings jewels representing the types of stones that are jewels, and stones representing the stones you have. Each character in stones is a type of stone you have. You want to know how many of the stones you have are also jewels.
+Letters are case sensitive, so "a" is considered a different type of stone from "A".
+
+Example 1:
+Input: jewels = "aA", stones = "aAAbbbb"
+Output: 3
+
+Example 2:
+Input: jewels = "z", stones = "ZZ"
+Output: 0
+
+Constraints:
+1 <= jewels.length, stones.length <= 50
+jewels and stones consist of only English letters.
+All the characters of jewels are unique.
+
+33) Given an array of integers arr, write a function that returns true if and only if the number of occurrences of each value in the array is unique.
+
+Example 1:
+Input: arr = [1,2,2,1,1,3]
+Output: true
+Explanation: The value 1 has 3 occurrences, 2 has 2 and 3 has 1. No two values have the same number of occurrences.
+
+Example 2:
+Input: arr = [1,2]
+Output: false
+
+Example 3:
+Input: arr = [-3,0,1,-3,1,1,1,-3,10,0]
+Output: true
+
+34) Given a non-empty array of integers nums, every element appears twice except for one. Find that single one.
+
+Example 1:
+Input: nums = [2,2,1]
+Output: 1
+
+Example 2:
+Input: nums = [4,1,2,1,2]
+Output: 4
+
+Example 3:
+Input: nums = [1]
+Output: 1
+
+35) Given a non-empty array of integers, return the k most frequent elements.
+
+Example 1:
+Input: nums = [1,1,1,2,2,3], k = 2
+Output: [1,2]
+
+Example 2:
+Input: nums = [1], k = 1
+Output: [1]
+
+Example 3:
+Input: nums = [1,2], k = 2
+Output: [1,2]
+
+36) Given a non-empty list of words, return the k most frequent elements.
+
+Your answer should be sorted by frequency from highest to lowest. If two words have the same frequency, then the word with the lower alphabetical order comes first.
+
+Example 1:
+Input: ["i", "love", "leetcode", "i", "love", "coding"], k = 2
+Output: ["i", "love"]
+Explanation: "i" and "love" are the two most frequent words.
+
+Example 2:
+Input: ["the", "day", "is", "sunny", "the", "the", "the", "sunny", "is", "is"], k = 4
+Output: ["the", "is", "sunny", "day"]
+Explanation: "the", "is", "sunny" and "day" are the four most frequent words
+
+37) The set S originally contains numbers from 1 to n. But unfortunately, due to the data error, one of the numbers in the set got duplicated to another number in the set, which results in repetition of one number and loss of another number.
+Given an array nums representing the data status of this set after the error. Your task is to firstly find the number occurs twice and then find the number that is missing. Return them in the form of an array.
+
+Example 1:
+Input: nums = [1,2,2,4]
+Output: [2,3]
+
+38) Given two strings s and t, determine if they are isomorphic.
+Two strings are isomorphic if the characters in s can be replaced to get t.
+All occurrences of a character must be replaced with another character while preserving the order of characters. No two characters may map to the same character but a character may map to itself.
+
+Example 1:
+Input: s = "egg", t = "add"
+Output: true
+Example 2:
+Input: s = "foo", t = "bar"
+Output: false
+Example 3:
+Input: s = "paper", t = "title"
+Output: true
+Note:
+You may assume both s and t have the same length.
+
+39) Given a string s which consists of lowercase or uppercase letters, return the length of the longest palindrome that can be built with those letters.
+Letters are case sensitive, for example, "Aa" is not considered a palindrome here.
+Example 1:
+Input: s = "abccccdd"
+Output: 7
+Explanation:
+One longest palindrome that can be built is "dccaccd", whose length is 7.
+Example 2:
+Input: s = "a"
+Output: 1
+Example 3:
+Input: s = "bb"
+Output: 2
+
+40) Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
+An input string is valid if: Open brackets must be closed by the same type of brackets. Open brackets must be closed in the correct order.
+
+Example 1:
+Input: s = "()" , Output: true
+
+Example 2:
+Input: s = "()[]{}"
+Output: true
+
+41) Given an array of integers say nums and an integer say target, return indices of the two numbers such that they add up to target.
+You may assume that each input would have exactly one solution, and you may not use the same element twice.
+You can return the answer in any order.
+example:
+Input: nums = [2,7,11,15], target = 9
+Output: [0,1]
+Explanation:
+nums[0] + nums[1] == 9, so we
+return [0, 1].
+
+42) Given an array of integers nums and an integer k, return the total number of continuous subarrays whose sum equals to k.
+
+Example 1:
+Input: nums = [1,1,1], k = 2
+Output: 2
+
+Example 2:
+Input: nums = [1,2,3], k = 3
+Output: 2

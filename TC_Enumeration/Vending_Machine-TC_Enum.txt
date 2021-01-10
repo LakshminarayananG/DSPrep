@@ -1,0 +1,35 @@
+Test vending machine:
+
+Button Based:
+1. To verify whether user is able to select item by using pre default options displayed
+2. To verify whether current selection overwrites any existing selection
+3. To verify whether amount displayed based on the current item selected
+ 
+Touch Based:
+4. To verify whether user is able to select items from the touch panel
+5. To verify whether user is able to increase or decrease quantity of the item
+6. To verify whether user is able to remove the item from the selection
+7. To verify whether amount calculated based on item selected and its quantity
+
+Money Intake:
+8. To verify whether machine accepts money (Cash, Coins)
+9. To verify whether machine find actual value of the currency
+10. To verify whether machine accepts different versions of the coin (special coins, different version)
+11. To verify whether machine returns invalid currency	(old coins/notes, foreign currency)
+
+Cancel Transaction:
+12. To verify whether user is able to cancel the transaction
+13. To verify whether machine returns the amount when user cancels transaction after money is paid
+ 
+Item Dispense:
+14. To verify whether machine dispense items based on user selection (single item, multiple item, multiple quantity)
+15. To verify whether machine dispense items and refund amount if user selects quantity more than available
+
+Edge case:
+16. To verify whether machine dispenses when power shut down during dispense
+
+Negative:
+17. To verify whether machine doesn't accept more than actual amount
+18. To verify whether machine doesn't accept damaged currency
+19. To verify whether machine doesn't allow user to select item quantity more than fixed size
+20. To verify whether machine doesn't allow user to select sold out items

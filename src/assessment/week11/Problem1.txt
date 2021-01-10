@@ -1,0 +1,22 @@
+Write the edge cases for the automated car driving system [Minimum 5 testcases]
+
+1. 
+[Functional]
+Verify if the automated control is not lost in case of any manual intervention by the passenger on the steering
+
+2.
+[Functional]
+Verify if the automated car doesn't move any further when it hits any other vehicle
+
+3.
+[Functional]
+Verify if the air bags are released automatically when it hits any barrier
+
+4. 
+[Functional]
+Verify if the vehicle stops moving in case of any fire within the car
+
+5.
+[Functional]
+Verify if the automated driving system moves to any of the side when there is another vehicle approaching and about
+to hit the vehicle

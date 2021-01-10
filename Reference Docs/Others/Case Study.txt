@@ -1,0 +1,24 @@
+#1
+Situation: Whenever we run our UI automation tests, we found closely 15-20 scripts failed on average due to application defects. So we need raise JIRA tickets with proper snapshots and steps manually after auditing. This takes anywhere about 60 minutes to 90 minutes approximately !!
+Task: Automating the JIRA defect creation with steps and snapshots automated !!
+Action: After Webdriver tests are done, inside our TestNg afterSuite, we call the REST API of Jira using RestAssured
+        a) to call the issue creation with proper steps  - assigned to ourselves
+        b) Add attachment of snapshots and log file on that issue
+Result: You are reducing on average of 60 minutes daily for each project. Based on the success of this approach, my org followed this for more than 50+ projects and as I awarded as well !!
+Defect Classification using ML 
+
+#2
+Situation: Whenever we have run set of tests that are dependent on test data from another application or another module, it consumes lot of time to create data specially when run UI and also end up with failures and due to which, you need to create more data than what you really need !!
+Task: Test data creation using API is preferred due to speed and less failures !!
+Action: Inside the UI automation framework, use beforeMethod to create data using RestAssured and feed the data to the Webdriver script
+Result: This reduced the time taken to create data (from 10 to 15 minutes to less than a second) and also reduce the test failures to wrong data and thus increasing the automation effeciency!
+
+Case Study 3:
+Situation: Oracle NetSuite App -> Automate -> OTP (US Phone) -> Mobile -> OTP -> Feed -> Web App -> Automation ???
+Task: Alternate way to bypass the OTP authentication (OAuth -> Token [Life: 2 Weeks]) + Can we ask the dev implementation to disable OTP [OUT] ?
+Action:
+1) We manually did the login and with OTP -> from the Network tab (we collected the OAuth Token)
+2) Passed the OAuth token to the webdriver script in the header (Selenium 4.x + DevTools / Selenium 3.x + Our DevTools library)
+3) No login even needed, automatic redirect to home page
+Result:
+Automate the application without the OTP challenge and that created easiness to automation!!

@@ -1,0 +1,5 @@
+Attempt programming first or go in order
+test data > pseudo code > programming
+read the problem clearly and ask right questions 
+test case/data enumeration - write less and deliver more (put priority and clasify)
+if no time, write pseudo code for brute force and optimized solution and write code for optimized solution

@@ -1,0 +1,14 @@
+Given only 3 alphabets as input, the script finds total possible strings by rearranging 
+them and return the result. Write all possible test data for this. 
+E.g.: r,s,k => rsk,rks,srk,skr,krs,ksr
+Note: Write only test data, scripting is not required
+
+By Case:
+Only upper: ABC, AAB, AAA
+Only lower: abc, aab, aaa
+Mixed: Abc, aAb, aAA
+
+By Occurance:
+Unique: XYZ, Xyz, zYZ
+Duplicates: XXZ, yyZ, xzZ
+Only one: ZZZ, yyy, ZzZ

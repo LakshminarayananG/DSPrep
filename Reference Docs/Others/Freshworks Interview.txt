@@ -1,0 +1,22 @@
+intresting bug found
+straight forward case for meeting invite app
+corner cases for book my show
+Payment deducted by ticket not booked - debugging skills
+Chrome upgrade how will you cover
+[2:53 PM, 11/19/2020] Muthu Freshworks: Second round will be totally QA round to come up with different scenarios for a use case
+[2:57 PM, 11/19/2020] Muthu Freshworks: 1st round -
+Framework explanation - If we say we know different frameworks, then thye would ask for the differences
+Selenium questions - usually we can explain easily.. example -They will ask us to tell the steps to automate a usecale(like zomato app), how different levels of user accessing it (like middleware, customer and hotel rep)
+Mainly on xpath - They would ask you to share your screen and open a website and would give a scensrio to write cpath..
+Programs - Mostly our daily coding challenge would help, also if we know different concepts to understand the problem they we can clear that..
+API - different authentication(oauth is main), basic requests
+
+
+
+
+1) for interseting bug, tests how good we are thinking. say like what you found and how you reported to community
+2) ask right set of questions like webex scenario ask like need to explain entire flow or just a section or feature
+3) ask permission to think through the scenario. if scenario is difficult ask for tip or help
+4) first tell +ve scn, performance, then go to -ve scn, edge case (finally if required ask for hint)
+
+X-path version 2.0

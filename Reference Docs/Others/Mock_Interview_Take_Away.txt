@@ -1,0 +1,81 @@
+General thumb rule:
+For any questions don't answer in single word or sentence
+
+Tell me about yourself, it should be who you're rather than what you do
+1) Tell your name
+2) Location
+3) Family
+4) Education
+5) company and experience
+6) Hobbies
+7) If you're into NGO, talk about it
+8) your project - just 2 lines
+Once finished tell interviewer something like "That’s all about myself" and ask him whether you want to elaborate about your project
+if yes, then explain very detailed about what you do
+
+JAVA questions:
+1. For a given number, give sum of that number
+e.g.: int input=1234
+output=10
+2. For a given string return the duplicate characters
+e.g.: String input="aabccd"
+Output=a, c
+
+For problematic questions, follow below rules
+1. Be ready - like take pen and paper
+2. Listen and take notes
+3. Take time to understand the question - Ask interviewer some time in polite way to understand the question
+4. Complete understanding by asking questions
+5. Confirming understanding
+6. Request sometime to come up with the solution (Pseudo code)
+7. Come up with the solution
+8. Validating solution
+9. Explain solution
+10. Request time to write code/program
+11. Request time to test code/program
+12. Explain the code
+13. Optimize the code
+
+While optimizing,
+1. Handle failure
+2. Reduce time and space complexity
+3. Coding standard and comments (tell interviewer that with given time I’ll be doing these)
+
+If you need time, ask like "can I take some more time?" and if you can't solve it in the given time, ask interviewer some time at end of the interview to solve it (Even if you can't solve it, this shows you like to take up the task that you left)
+
+Technical questions:
+For any question answer like,
+What is it? Why it is used? How it is used? Where it is used? What all are the challenges faced?
+If you don't know any question, don't give answer like "I don't know", you can say like
+"Sorry, I don't know this topic and I’ll make sure to bridge this gap at the earliest"
+
+Rating:
+How do you rate yourself?
+say for JAVA or Selenium, say the range like "in the scale of 1-10 where 1 is lowest and 10 is highest, I’m in xx"
+1. Don't say very low number (be reasonable like 7-8)
+2. You can say it in decimal (like 7.5)
+3. Tell why you gave this rating and tell what will you do/doing to improve the rating
+
+HR:
+What is the expected salary? Don't demand for the salary and don't blindly go for hike percentage. 
+do some research on company standard pay and tell them the range like "I'm looking into range xx-xx and I’m ok with the company standard as I’m looking for long term relationship with company"
+Why do you want to join this company? Know about the company and what do you like about it.
+Also, you can add something like "I know some of my friends are working in this company and I see all their financial needs are met"
+How do you see yourself in 5 years? Tell them what you want to be, where you're now, what are you doing to achieve that
+
+Ending:
+If any of your strong point is not discussed in the interview, let the interviewer know to discuss it
+For questions like below, try to have answer that convince both you and the interviewer
+1. Notice period (say negotiable)
+2. Are you ready to relocate?
+3. Are you ready to extend shift and work in week ends
+
+Try to have 4-5 different questions to ask interviewer and use different question in each round if they ask "do you have any question for me?"
+Ask feedback in a kind manner something like "Can you please tell me where I went wrong during the interview as this will help me in next stages"
+Try to ask technical question something like "I'm curious to know what is the team structure in the project" 
+Even if interviewer didn't ask question, we need to ask some question
+
+Finally,
+Say thank you something like "Thank you for giving me this opportunity and I learnt so much from this interview"
+
+After the interview, send a thank you mail to HR from whom we got the mail for interview.

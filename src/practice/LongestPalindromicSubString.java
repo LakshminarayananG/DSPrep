@@ -1,6 +1,8 @@
 package practice;
 
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 import org.junit.Test;
@@ -8,49 +10,86 @@ import org.junit.Test;
 public class LongestPalindromicSubString {
 	
 	@Test
-	public void eg1() {
-		String str="malayalammadam";
-		System.out.println(palind(str));
+	public void example1() {
+		String input = "aaa";
+		List<String> max=palindrome(input);
+		System.out.println(max);
+		System.out.println(max.size());
 	}
+
+	@Test
+	public void example2() {
+		String input = "aabc";
+		List<String> max=palindrome(input);
+		System.out.println(max);
+		System.out.println(max.size());
+	}
+
+	@Test
+	public void example3() {
+		String input = "abcd";
+		List<String> max=palindrome(input);
+		System.out.println(max);
+		System.out.println(max.size());
+	}
+
+	@Test
+	public void example4() {
+		String input = "aabcad";
+		List<String> max=palindrome(input);
+		System.out.println(max);
+		System.out.println(max.size());
+	}
+	
 	
 	@Test
-	public void eg2() {
-		String str="babad";
-		System.out.println(palind(str));
+	public void example5() {
+		String input = "acbcacba";
+		int longest=palindromelongest(input);
+		System.out.println(longest);
 	}
+
 	
 	
-	private int palind(String input) {
-		Set<String> set = new HashSet<String>();
-		int maxcount=0;int currentlen=0;
-		for(int i=0;i<input.length();i++) {
-			//For odd number of Palindrome
-			String str=expand(input,i,i,set);
-			currentlen=str.length();
-			if(currentlen>maxcount) {
-				maxcount=currentlen;
+	
+	private List<String>  palindrome(String input) {
+		int longest=0;
+		List<String> list = new ArrayList<String>();
+		for (int i = 0; i < input.length(); i++) {
+			for (int j = i + 1; j <= input.length(); j++) {
+				String str = input.substring(i, j);
+				if (str.equals(new StringBuilder(str).reverse().toString()))
+					list.add(str);
 			}
-			
-			//For even number of palindrome
-			expand(input,i,i+1,set);
-			currentlen=str.length();
-			if(currentlen>maxcount) {
-				maxcount=currentlen;
-			}
-			
 		}
-		return maxcount;
+		for (String string : list) {
+			if(string.length()>longest) {
+				longest=string.length();
+			}
+		}
+		return list;
 	}
-	
-	
-	private String expand(String input, int low, int high, Set<String> set) {
-		while (low >= 0 && high < input.length() && input.charAt(low) == input.charAt(high)) {
-			set.add(input.substring(low, high + 1));
-				low--;
-				high++;
+
+
+	private int  palindromelongest(String str) {
+		Set<Character> set= new HashSet<Character>();
+		
+		for(int i=0;i<str.length();i++) {
+			if(set.contains(str.charAt(i))) {
+				set.remove(str.charAt(i));
+			}
+			else {
+				set.add(str.charAt(i));
+			}
 		}
 		
-		return input.substring(low+1, high);
+		if(set.size()<=1) {
+			return str.length();
+		}
+		
+		else {
+			return str.length()-set.size()+1;
+		}
 	}
 
 }

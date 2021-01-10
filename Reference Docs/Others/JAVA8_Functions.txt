@@ -1,0 +1,32 @@
+https://leetcode.com/problems/top-k-frequent-words/
+
+Collect as Map:
+*sort map values by descending order
+*limit to output to 2 entries
+*collect as linked hashmap
+
+map.entrySet().stream().sorted(Map.Entry.comparingByValue(Comparator.reverseOrder())).limit(2).collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue, (e1, e2) -> e1, LinkedHashMap::new))
+
+Sort map by values and if map values equals same sort by key in lexicographical order,
+
+PriorityQueue<String> que=new PriorityQueue<>((entryA,entryB)->map.get(entryA)==map.get(entryB)?entryA.compareTo(entryB):map.get(entryB)-map.get(entryA));
+que.addAll(map.keySet());
+
+while(k--!=0)
+	output.add(que.poll());
+	
+System.out.println(output);
+
+
+Map<Integer, Integer> collect = Arrays.stream(nums).boxed().collect(Collectors.groupingBy(k->k,Collectors.reducing(0, k->1, Integer::sum)));
+
+Map<Integer, Long> map = Arrays
+        .stream(nums)
+        .boxed() // this
+        .collect(Collectors.groupingBy(e -> e, Collectors.counting()));
+        
+Set<Integer> range = IntStream.rangeClosed(1, nums.length).boxed().collect(Collectors.toSet());
+
+Set<Character> collect = s.chars().mapToObj(each->(char)each).collect(Collectors.toSet());
+
+Set<Character> set=str.chars().mapToObj(e->(char)e).collect(Collectors.toCollection(TreeSet::new));

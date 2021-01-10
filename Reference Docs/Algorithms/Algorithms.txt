@@ -1,0 +1,67 @@
+1)	Reversal algorithm -> to rotate an array for given number of times
+Split the array to the given times (k) and rotate it seperately.
+
+2	3	1	||	4	7	8	k=3
+8	7	4	||	1	3	2
+4	7	8	||	1	3	2
+4	7	8	||	2	3	1
+
+2)	Sliding window algorithm:
+find max sum of sub array of size 3
+** Adding last element and removing first element in sub array
+1	5	7	3	8	1	2
+1	5	7	->	13
+	5	7	3	->	15
+		7	3	8	->	18
+			3	8	1	->	12
+				8	1	2	->	11
+
+return the subarray with sum 7
+1	7	4	3	1	2	1	5	1
+output: [7], [4,3], [3,1,2,1], [1,5,1]
+
+2a) Sliding with Hash Map:
+
+2b) Sliding with 2 pointer:
+
+
+3)	Hashing algorithm:
+Alternate to sliding window
+
+Return the subarray with sum 3
+[1,2,2,1,2]
+
+Index	Key		sum		expected sum	difference
+0		1		1		3				-2
+1		2		*3		3				*0		{0,1}
+2		2		*5		3				2
+3		1		6		3				*3		{2,3}
+4		2		8		3				*5		{3,4}
+
+4)	Kandane algorithm: Used for array with subsequent elements
+If array has -ve numebrs and min 1 +ve number then this technique can be used
+Note: if array has all -ve then dont go with this algorithm
+
+Rules:
+a. Add subsequent number
+b. If sum is greater than 0, add to window sum
+c. If sum is less than 0, reset window sum to zero
+
+5) Swap Algorithm:
+Used to rotate/reverse an array
+
+H	E	L	L	O
+*				*
+
+O	E	L	L	H
+	*		*	
+
+O	L	L	E	H
+		**
+		
+6) Two Pointer Algorithm: 
+#move zeros to end
+
+7) Dutch National Flag (3 pointer):
+
+8) Expand From Center:

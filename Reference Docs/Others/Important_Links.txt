@@ -1,0 +1,19 @@
+https://www.xmind.net/
+https://www.interviewbit.com/coding-interview-questions/
+https://refactoring.guru/refactoring
+asciitable.com
+https://www.geeksforgeeks.org/java-8-predicate-with-examples/
+https://leetcode.com/discuss/interview-question/344650/Amazon-Online-Assessment-Questions
+https://www.bigocheatsheet.com/
+https://www.baeldung.com/java-collections-complexity
+https://cp-algorithms.com/string/manacher.html#toc-tgt-2
+https://martinfowler.com/
+
+Resume:
+https://www.careercup.com/resume
+https://medium.com/free-code-camp/writing-a-killer-software-engineering-resume-b11c91ef699d
+
+Pattern:
+https://github.com/barancev/decorated-webdriver (Builder Framework)
+https://github.com/barancev/webdriver-factory (Factory)
+ThreadLocal 
