@@ -48,7 +48,7 @@ public class SubArraySum {
 		int currsum = input[0];
 		int maxsum = Integer.MIN_VALUE;
 
-		for (int i = 0; i < input.length; i++) {
+		for (int i = 1; i < input.length; i++) {
 			if (currsum + input[i] < input[i])
 				currsum = input[i];
 			else

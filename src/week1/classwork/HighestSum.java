@@ -34,7 +34,7 @@ public class HighestSum {
 	public void example1() {
 		int[] inputarray = { 1, 1, 1, 1, 1, 90, 25 };
 		int num = 1;
-		int highestSum = highestSum(inputarray, num);
+		int highestSum = highestSumSlide(inputarray, num);
 		System.out.println("Eg1 :"+highestSum);
 	}
 
@@ -42,7 +42,7 @@ public class HighestSum {
 	public void example2() {
 		int[] inputarray = { 1, 4, 7, 1, 1, 5, 2 };
 		int num = 5;
-		int highestSum = highestSum(inputarray, num);
+		int highestSum = highestSumSlide(inputarray, num);
 		System.out.println("Eg2 :"+highestSum);
 	}
 
@@ -50,7 +50,7 @@ public class HighestSum {
 	public void example3() {
 		int[] inputarray = { 1, 1, 1, 1, 1, 1, 1 };
 		int num = 3;
-		int highestSum = highestSum(inputarray, num);
+		int highestSum = highestSumSlide(inputarray, num);
 		System.out.println("Eg3 :"+highestSum);
 	}
 
@@ -58,7 +58,7 @@ public class HighestSum {
 	public void example5() {
 		int[] inputarray = { 12,24,48,64,100,1,1,1,2 };;
 		int num = 4;
-		int highestSum = highestSum(inputarray, num);
+		int highestSum = highestSumSlide(inputarray, num);
 		System.out.println("Example 5 is "+ highestSum);
 	}
 
@@ -83,7 +83,7 @@ public class HighestSum {
 	public void example7() {
 		int[] inputarray = { -280, -1, 0, -111, -1, -90, -25, -38, -27 };
 		int num = 3;
-		int highestSum = highestSumSlide(inputarray, num);
+		int highestSum = highestSumSlideother(inputarray, num);
 		System.out.println("Eg7 :"+highestSum);
 	}
 	 
@@ -130,7 +130,7 @@ public class HighestSum {
 	
 	
 	private int highestSumSlide(int[] numbers, int num) {
-		if(num>1 && num>numbers.length) {
+		if(num<2 && num>numbers.length) {
 			throw new RuntimeException("Value of the number is outside of expected range");
 		}
 		int max_sum=0,window_sum=0;
@@ -148,7 +148,7 @@ public class HighestSum {
 	
 	
 	private int highestSumSlideother(int[] input, int sizeWindow) {
-		if(sizeWindow>1 && sizeWindow>input.length) {
+		if(sizeWindow<2 && sizeWindow>input.length) {
 			throw new RuntimeException("Value of the number is outside of expected range");
 		}
 		int max_sum=0;

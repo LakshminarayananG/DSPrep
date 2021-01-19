@@ -39,7 +39,7 @@ public class PermutationOfString {
 	public void eg5() {
 		String s1="abc";
 		String s2="bcbacbh";
-		System.out.println("Four: " +detectAnagrams2(s2, s1));
+		System.out.println("Five: " +check(s1, s2));
 	}
 	
 	

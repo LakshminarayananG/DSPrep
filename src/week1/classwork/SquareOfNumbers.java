@@ -14,7 +14,7 @@ public class SquareOfNumbers {
 	
 	@Test
 	public void eg2() {
-		int[] input= {-8,-3,-2,15,2,4,10};
+		int[] input= {-8,-3,-2,1,4,12};
 		System.out.println(Arrays.toString(squaresTwoPoint(input)));
 	}
 	

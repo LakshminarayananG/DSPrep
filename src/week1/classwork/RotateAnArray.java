@@ -32,12 +32,12 @@ public class RotateAnArray {
 	 */
 	
 	
-	//@Test
+	@Test
 	public void eg1() {
 		int[] input = { 1, 5, 6, 3, 4, 5 };
 		int rotate = 3;
 		int[] output = rotate(input, rotate);
-		System.out.println(Arrays.toString(output));
+		System.out.println("Eg1"+Arrays.toString(output));
 	}
 
 	@Test
@@ -45,7 +45,7 @@ public class RotateAnArray {
 		int[] input = { 1, 5, 6, 3, 4, 5 };
 		int rotate = 13;
 		int[] output = rotate(input, rotate);
-		System.out.println(Arrays.toString(output));
+		System.out.println("Eg2"+Arrays.toString(output));
 	}
 
 	@Test
@@ -53,7 +53,7 @@ public class RotateAnArray {
 		int[] input = { 1, 5, 6, 3, 4, 5 };
 		int rotate = 6;
 		int[] output = rotate(input, rotate);
-		System.out.println(Arrays.toString(output));
+		System.out.println("Eg3"+Arrays.toString(output));
 	}
 
 	@Test
@@ -61,7 +61,7 @@ public class RotateAnArray {
 		int[] input = { 1, 5, 6, 3, 4, 5 };
 		int rotate = 31;
 		int[] output = rotate(input, rotate);
-		System.out.println(Arrays.toString(output));
+		System.out.println("Eg4"+Arrays.toString(output));
 	}
 
 	@Test
@@ -69,7 +69,7 @@ public class RotateAnArray {
 		int[] input = { 1, 5, 6, 3, 4, 5 };
 		int rotate = 21;
 		int[] output = rotateArr(input, rotate);
-		System.out.println(Arrays.toString(output));
+		System.out.println("Eg5"+Arrays.toString(output));
 	}
 	
 	
