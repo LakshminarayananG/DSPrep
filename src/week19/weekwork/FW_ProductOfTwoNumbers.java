@@ -19,6 +19,14 @@ public class FW_ProductOfTwoNumbers {
 	}
 	
 	
+	@Test
+	public void eg2() {
+		int[] input= {1,2};
+		int target=2;
+		System.out.println(Arrays.toString(retprodIndices(input, target)));
+	}
+	
+	
 	/* Using Set
 	 * 1. Iterate from 0 to n-1
 	 * 2. Check if index value is 0, if so continue to next element (to avoid divide by 0 exception)
@@ -32,10 +40,10 @@ public class FW_ProductOfTwoNumbers {
 		
 		for (int i = 0; i < input.length; i++) {
 			if(input[i]==0) continue;
-			else if(set.contains(target/input[i])) {
+			else if(set.contains(target/input[i]) && target%input[i]==0) {
 				return new int[] {target/input[i],input[i]};
 			}
-			else {
+			else if(target%input[i]==0){
 				set.add(input[i]);
 			}
 		}
