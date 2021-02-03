@@ -1,0 +1,429 @@
+1) Given an integer array return all the subarray (start and end index) with sum matching target
+Input: int[] num={1, 7, 4, 3, 4, 1, 2, 5, 1};
+int target=7
+Output:
+1,1
+2,3
+3,4
+4,6
+6,7
+Note: To be solved using window sliding and hashing techinque
+
+2) Given an integer array return subarray with maximum sum with size K
+Input: int[] num={1, 5, 3, 7, 1, 2};
+Target: 3
+Output: 15
+Note: To be solved using window sliding
+
+3) Return duplicates,
+Input: {2, 1, 3, 1, 3, 1, 4}
+Output: {1,3}
+
+4) Find unique characters in given string
+Input: "TestLeaf"
+Output: s,a,f
+
+5) Given a string, you need to reverse the order of characters in each word within a sentence while still preserving whitespace and initial word order.
+
+Input:  "I am doing great"
+Output: "I ma gniod taerg"
+
+6) Reverse a string
+Input: Welcome
+Output: emocleW
+
+7) Given an encoded string, return its decoded string.
+
+Input: s = "3[a]2[bc]"
+Output: "aaabcbc"
+
+Input: s = "3[a2[c]]"
+Output: "accaccacc"
+
+8) Remove vowels
+Input: TestLeaf
+Output: Tstlf
+
+9) Find palindrome substrings from given string:
+Input: abccba
+Ouput: [a, b, c, cc, bccb, abccba, c, b, a]
+
+10) Return all prime numbers from given string
+Input: 403198305
+Output: 3, 19, 83, 5, 983, 31
+
+11) Return length of longest palindrome
+Input: ababcacbab
+Ouput: 10
+
+12) Return second least repeating characters in given string
+Input: paypal
+Output: y
+
+13) https://leetcode.com/problems/symmetric-tree/
+
+14) https://leetcode.com/problems/balanced-binary-tree/
+
+15) https://leetcode.com/problems/binary-tree-postorder-traversal/
+
+16) https://leetcode.com/problems/binary-tree-right-side-view/
+
+17) https://leetcode.com/problems/kth-smallest-element-in-a-bst/
+
+18) https://leetcode.com/problems/minimum-absolute-difference-in-bst/
+
+19) https://leetcode.com/problems/second-minimum-node-in-a-binary-tree/
+
+20) https://leetcode.com/problems/search-in-a-binary-search-tree/
+
+21) https://leetcode.com/problems/leaf-similar-trees/
+
+22) https://leetcode.com/problems/binary-tree-inorder-traversal/
+
+23) Given an array of integers and an integer k, find out whether there are two distinct indices i and j in the array such that nums[i] = nums[j] 
+and the absolute difference between i and j is at most k.
+Example 1:
+Input: nums = [1,2,3,1], k = 3
+Output: true
+Example 2:
+Input: nums = [1,0,1,1], k = 1
+Output: true
+Example 3:
+Input: nums = [1,2,3,1,2,3], k = 2
+Output: false
+Example 3:
+Input: nums = [1,2,3,2,2,3], k = 2
+Output: true
+Hint: Window Sliding
+
+24) Given an array of strings made only from lowercase letters, 
+return a list of all characters that show up in all strings within the list (including duplicates).  
+For example, if a character occurs 3 times in all strings but not 4 times, you need to include that character three times in the final answer.
+You may return the answer in any order.
+Input: ["bella","label","roller"]
+Output: ["e","l","l"]
+Input: ["cool","lock","cook"]
+Output: ["c","o"]
+
+25) Given a pattern and a string s, find if s follows the same pattern.
+Here follow means a full match, such that there is a bijection between a letter in pattern and a non-empty word in s.
+Example 1:
+Input: pattern = "abba", s = "dog cat cat dog"
+Output: true
+Example 2:
+Input: pattern = "abba", s = "dog cat cat fish"
+Output: false
+Input: pattern = "abc", s = "hello world world"
+Output: false
+Algorithm: HashMap 
+
+26) Given a string s that consists of only upper case letters, you can perform at most k operations on that string.
+In one operation, you can choose any character of the string and change it to any other upper case character.
+Find the length of the longest sub-string containing all repeating letters you can get after performing the above operations.
+Example 1:
+Input:
+s = "ABAB", k = 2
+Output:
+4
+Explanation:
+Replace the two 'A's with two 'B's or vice versa.
+Example 2:
+Input:
+s = "AABABBA", k = 1
+Output:
+4
+Explanation:
+Replace the one 'A' in the middle with 'B' and form "AABBBBA".
+The substring "BBBB" has the longest repeating letters, which is 4.
+
+27) Find max consecutive character in the string. Return blank if there is no max consecutive characters.
+Input: Amaazon is a great company as it haas AtoooZzz
+Output: o
+
+Input: Amazon
+Output: '' 
+
+29) Given an array A of 0s and 1s, you are allowed to change K values from 0 to 1.
+Return the length of the longest (contiguous) sub array that contains only 1s. 
+Input: A = [1,1,1,0,0,0,1,1,1,1,0], K = 2
+Output: 6
+
+Input: A = [0,0,1,1,0,0,1,1,1,0,1,1,0,0,0,1,1,1,1], K = 3
+Output: 10
+
+30) Given a string s and an integer k.
+Return the maximum number of vowel letters [exact first match] in any substring of s with length k.
+Vowel letters in English are (a, e, i, o, u).
+Example 1:
+Input: s = "abciiidef", k = 3
+Output: iii
+Explanation: The substring "iii" contains 3 vowel letters.
+Example 2:
+Input: s = "aeiou", k = 2
+Output: ae
+
+31) Write a function to print the first duplicate number in the array
+Example: [4,1,2,9,1]
+Output: 1
+
+32) Given an array of numbers and a specific number (n), remove all instances of that number (n) and return the new length.
+Input: numbers = [0,1,2,2,3,0,4,2], number = 2
+Output: 5
+numbers = [0,1,4,0,3]
+
+33) Given 2 strings, find all the start indices of second string anagrams in first string.
+Note:
+Strings consists of lowercase letters only 
+The order of output does not matter.
+Input:
+s: "abab" p: "ab"
+Output:
+[0, 1, 2]
+Input:
+s: "testetr" p: "te"
+Output:
+[0, 3, 4]
+Sliding Window + HashMap 
+
+34) Write a solution to reverse only the vowels of a string.
+Input: "hello"
+Output: "holle"
+"aeiou"
+"uoiea"
+"testliaaf"
+"tastlaief"
+
+35) Write a function that takes 2 strings as input and returns a string with uncommon characters of the input strings.
+Example: Input: String1 = "aabde" String2 = "cbaz"
+
+36) Given an integer array nums, return all possible subsets .
+The solution set must not contain duplicate subsets.
+ 
+Example 1:
+Input: nums = [1,2,3]
+Output: [[],[1],[2],[1,2],[3],[1,3],[2,3],[1,2,3]]
+Example 2:
+Input: nums = [0]
+Output: [[],[0]]
+
+37) Given a set of candidate numbers (C) and a target number (T), find all unique combinations in C where the candidate numbers sums to T.
+The same repeated number may be chosen from C unlimited number of times.
+Example,
+Given candidate set 2,3,6,7,1 and target 7,
+A solution set is:
+[2, 2, 3]
+[3,3,1]
+[2,2,2,1]
+[7]
+
+38) Find all valid combinations of k numbers that sum up to n such that the following conditions are true:
+1) Only numbers 1 through 9 are used.
+2) Each number is used at most once.
+Return a list of all possible valid combinations. The list must not contain the same combination twice, and the combinations may be returned in any order.
+Example 1:
+Input: k = 3, n = 7
+Output: [[1,2,4]]
+Explanation:
+1 + 2 + 4 = 7
+There are no other valid combinations.
+Example 2:
+Input: k = 3, n = 9
+Output: [[1,2,6],[1,3,5],[2,3,4]]
+Explanation:
+1 + 2 + 6 = 9
+1 + 3 + 5 = 9
+2 + 3 + 4 = 9
+There are no other valid combinations.
+
+39) Given a string, find the length of the longest substring T that contains at most k distinct characters.
+e.g.:
+Input: s="eceba", k=2
+Output: 3
+Explanation: T is "ece" which its length is 3
+
+e.g.:2
+Input: s="aa", k=1
+Output: 2
+Explanation: T is "aa" which its length is 2
+
+40) Count ones from input array (using divide and conquer)
+input: {0, 0, 1, 1, 1, 1, 1 }
+Output: 5
+
+41) Given an array of size n, find the majority element. The majority element is the element that appears more than n/2 times.
+You may assume that the array is non-empty and the majority element always exist in the array.
+Example 1:
+Input: [3,2,3]
+Output: 3
+Example 2:
+Input: [2,2,1,1,1,2,2]
+Output: 2
+
+Note: Should not use built-in methods
+
+42) Convert a given number to roman
+
+43) Given an array of strings strs, group the anagrams together. You can return the answer in any order.
+Example 1:
+Input: strs = ["eat","tea","tan","ate","nat","bat"]
+Output: [["bat"],["nat","tan"],["ate","eat","tea"]]
+
+44) Convert a Integer to its English words representation.
+Input: num = 123
+Output: "One Hundred Twenty Three"
+
+Input: num = 1,234,567
+Output: "One Million Two Hundred Thirty Four Thousand Five Hundred Sixty Seven"
+
+45) Find the maximum possible value by inserting '5'
+Examples:
+input: 1234 -> output: 51234
+input: 7643 -> output 76543
+input: 0 -> output 50
+input: -661 -> output -5661
+
+46) Given a paragraph and a list of banned words, return the most frequent word that is not in the list of banned words. 
+It is guaranteed there is at least one word that isn't banned, and that the answer is unique.
+
+Words in the list of banned words are given in lowercase, and free of punctuation.  Words in the paragraph are not case sensitive.  
+The answer is in lowercase.
+
+ 
+
+Example:
+
+Input: 
+paragraph = "Bob hit a ball, the hit BALL flew far after it was hit."
+banned = ["hit"]
+Output: "ball"
+Explanation: 
+"hit" occurs 3 times, but it is a banned word.
+"ball" occurs twice (and no other word does), so it is the most frequent non-banned word in the paragraph. 
+Note that words in the paragraph are not case sensitive,
+that punctuation is ignored (even if adjacent to words, such as "ball,"), 
+and that "hit" isn't the answer even though it occurs more because it is banned.
+ 
+
+Note:
+
+1 <= paragraph.length <= 1000.
+0 <= banned.length <= 100.
+1 <= banned[i].length <= 10.
+The answer is unique, and written in lowercase (even if its occurrences in paragraph may have uppercase symbols, and even if it is a proper noun.)
+paragraph only consists of letters, spaces, or the punctuation symbols !?',;.
+There are no hyphens or hyphenated words.
+Words only consist of letters, never apostrophes or other punctuation symbols.
+
+47) Write a program that outputs the string representation of numbers from 1 to n.
+But for multiples of three it should output “Fizz” instead of the number and for the multiples of five output “Buzz”. For numbers which are multiples of both three and five output “FizzBuzz”.
+n = 15,
+Return:
+[
+    "1",
+    "2",
+    "Fizz",
+    "4",
+    "Buzz",
+    "Fizz",
+    "7",
+    "8",
+    "Fizz",
+    "Buzz",
+    "11",
+    "Fizz",
+    "13",
+    "14",
+    "FizzBuzz"
+]
+
+48) Given a string S with both lowercase and uppercase letters, return the biggest ASCII letter that appears both in lowercase and uppercase. 
+The returned letter must be in uppercase. If there is no such letter, return 'NO'.
+Examples:
+'aaabcAbCdD', return 'D'
+'aA', return 'A'
+'abcdE', return 'NO'
+'a', return 'NO'
+
+49) Sort based on another String
+Given one string ('abbceeeg') sort it based on another string ('egbca')
+Result will be: 'eeegbbca'
+Do it less O[N2] => O[nlogn] => O[N]
+String s1 ="abbceeeg";
+String s2 = "egbca";
+Lowercase Alphabets
+No built sort functions !!
+
+50) Two Sum II
+int[] nums = {1,4,5,7,8,9,11};
+int k = 12
+[[0,6][1,4][2,3]]
+int[] nums = {1,4,5,7,7,9,11};
+int k = 11
+[[1,3]]
+
+51) Convert word to integer
+Input: "One Hundred Twenty Three"
+Output: 123
+
+52) https://leetcode.com/problems/maximum-subarray/discuss/981146/Java-approach-Recursive-DP-Kadane-Divide-and-Conquer
+
+53) https://leetcode.com/problems/number-of-islands/
+
+54) Given an array nums of n integers where n > 1,  
+return an array output such that output[i] is equal to the product of all the elements of nums except nums[i].
+
+Example:
+
+Input:  [1,2,3,4]
+Output: [24,12,8,6]
+Constraint: It's guaranteed that the product of the elements of any prefix or suffix of the array 
+(including the whole array) fits in a 32 bit integer.
+
+Note: Please solve it without division and in O(n).
+
+Follow up:
+Could you solve it with constant space complexity? 
+(The output array does not count as extra space for the purpose of space complexity analysis.)
+
+55) Given a string S, return the number of substrings that have only one distinct letter.
+
+Example 1:
+
+Input: S = "aaaba"
+Output: 8
+Explanation: The substrings with one distinct letter are "aaa", "aa", "a", "b".
+"aaa" occurs 1 time.
+"aa" occurs 2 times.
+"a" occurs 4 times.
+"b" occurs 1 time.
+So the answer is 1 + 2 + 4 + 1 = 8.
+Example 2:
+
+Input: S = "aaaaaaaaaa"
+Output: 55
+
+Constraints:
+1 <= S.length <= 1000
+S[i] consists of only lowercase English letters.
+
+56) Given a non-empty string s and a dictionary wordDict containing a list of non-empty words, 
+determine if s can be segmented into a space-separated sequence of one or more dictionary words.
+
+Note:
+The same word in the dictionary may be reused multiple times in the segmentation.
+You may assume the dictionary does not contain duplicate words.
+Example 1:
+
+Input: s = "leetcode", wordDict = ["leet", "code"]
+Output: true
+Explanation: Return true because "leetcode" can be segmented as "leet code".
+Example 2:
+
+Input: s = "applepenapple", wordDict = ["apple", "pen"]
+Output: true
+Explanation: Return true because "applepenapple" can be segmented as "apple pen apple".
+             Note that you are allowed to reuse a dictionary word.
+Example 3:
+
+Input: s = "catsandog", wordDict = ["cats", "dog", "sand", "and", "cat"]
+Output: false

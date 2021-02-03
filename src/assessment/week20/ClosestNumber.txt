@@ -1,0 +1,59 @@
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.function.*;
+import java.util.regex.*;
+import java.util.stream.*;
+import static java.util.stream.Collectors.joining;
+import static java.util.stream.Collectors.toList;
+
+
+class Result {
+
+    /*
+     * Complete the 'closestNumbers' function below.
+     *
+     * The function accepts INTEGER_ARRAY numbers as parameter.
+     */
+
+    public static void closestNumbers(List<Integer> numbers) {
+    // Write your code here
+        Collections.sort(numbers);
+        int len=numbers.size()-1;
+        int minDiff=Integer.MAX_VALUE;
+        for(int i=0;i<len;i++){
+            minDiff=Math.min(minDiff, numbers.get(i+1)-numbers.get(i));
+        }
+        
+        for(int i=0;i<len;i++){
+            if(numbers.get(i+1)-numbers.get(i)==minDiff){
+                System.out.println(numbers.get(i)+" "+numbers.get(i+1));
+            }
+        }
+    }
+}
+public class Solution {
+    public static void main(String[] args) throws IOException {
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+
+        int numbersCount = Integer.parseInt(bufferedReader.readLine().trim());
+
+        List<Integer> numbers = IntStream.range(0, numbersCount).mapToObj(i -> {
+            try {
+                return bufferedReader.readLine().replaceAll("\\s+$", "");
+            } catch (IOException ex) {
+                throw new RuntimeException(ex);
+            }
+        })
+            .map(String::trim)
+            .map(Integer::parseInt)
+            .collect(toList());
+
+        Result.closestNumbers(numbers);
+
+        bufferedReader.close();
+    }
+}
