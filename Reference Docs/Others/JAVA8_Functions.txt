@@ -30,3 +30,17 @@ Set<Integer> range = IntStream.rangeClosed(1, nums.length).boxed().collect(Colle
 Set<Character> collect = s.chars().mapToObj(each->(char)each).collect(Collectors.toSet());
 
 Set<Character> set=str.chars().mapToObj(e->(char)e).collect(Collectors.toCollection(TreeSet::new));
+
+int[][] output = map.entrySet().stream().sorted(Map.Entry.comparingByValue()).limit(k).flatMap(fm->Stream.of(fm.getKey())).toArray(int[][]::new);
+
+
+static boolean isPrime(int number) {
+        if(number <= 2)
+            return number == 2;
+        else
+            return  (number % 2) != 0
+                    &&
+                    IntStream.rangeClosed(3, (int) Math.sqrt(number))
+                    .filter(n -> n % 2 != 0)
+                    .noneMatch(n -> (number % n == 0));
+    }

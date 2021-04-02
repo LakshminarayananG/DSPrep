@@ -1,0 +1,52 @@
+My name is Ajay and i'm from Chennai
+I currently working for FIS global as a Test automation engineer
+I have overall experience of 4 years in testing
+In which, 3 years into automation
+I predominantly worked on UI automation using selenium webdriver with java as language 
+and I also have 2 years experience with API testing in which 1 year in automation using RestAssured framework
+Out of self interest, currently i'm exloring on data structure and algorithm concepts to improve my java skills and contribution towards automation.
+Recently My current job role is more towards manual than automation, so
+I'm looking for an opportunity where i can contribute more on test automation
+That's all about me,Please let me know if you want to elaborate any
+
+
+My Day to Day job role in manual would be,
+Requirement analysis - JIRA
+deriving test cases for the stories or features
+Manual exeution of the cases
+once SIT is done, validation in UAT
+regression bed update
+
+in automation would be,
+Failure analysis
+enhancing script or changing locators based on failure
+incorporating current release changes to regression bed
+debugging for collegues
+
+Sprint activities would be,
+Daily stand up call
+defect triage
+sprint planning
+
+apart from these,
+i have created tool to member creation
+participated in many campaigns where we test different application and share feedback or defects
+
+let me know if you like to eloborate in any
+
+my framework uses POM and it is designed based on SOLID principles.
+Softwares: Jenkin (CICD), Maven (build tool), Bitbucket(Version control), WebDriver (UI), RestAssured (API), TestNG (Runner), ExtentReports (Reproting) Jira (logging defects)
+
+Structurally , 6 folders
+Util folder - for excel, reporter, property file
+design folder - for browser and element design (interface)
+selenium base folder - to implement design methods
+Testng base folder - for browser launch/close, data provider
+pages folder
+Test case folder
+
+nightly run - sanity everyday
+build triggers - once build is ready
+regression run - end of sprint
+
+once dev build is success -> qa pipeline is triggered -> maven build goal (test) -> test calls testng.xml using surefire plugin -> calls before suite (reporter) -> data provider -> before method (launch browser) -> tests will be executed -> close browser -> generate reports -> post trigger sends mail with report attached

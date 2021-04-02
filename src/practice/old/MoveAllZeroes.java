@@ -1,6 +1,10 @@
 package practice.old;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+
 import org.junit.Test;
 
 public class MoveAllZeroes {
@@ -62,7 +66,9 @@ public class MoveAllZeroes {
         }
         while (count <input.length) {
             input[count++] = 0; 
-        }        
+        }
+        
+        
         return input;
         
 	}

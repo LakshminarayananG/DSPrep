@@ -108,6 +108,13 @@ public class FindLongestSubString {
 		Assert.assertEquals(5, slidingWindow(input, k));
 		Assert.assertEquals(5, countOfMax(input, k));
 	}
+	
+	@Test
+	public void example7() {
+		String input = "";
+		int k = 2;
+		System.out.println(slidingWindow(input, k));
+	}
 
 	private int bruteForce(String input, int k) {
 		int len = 0, maxLen = Integer.MIN_VALUE;
@@ -132,7 +139,7 @@ public class FindLongestSubString {
 		char[] carr = input.toCharArray();
 		int len = carr.length;
 		int start = 0, end = 0;
-		int maxOcc = 0, maxLen = Integer.MIN_VALUE;
+		int maxOcc = 0, maxLen = 0;
 
 		while (end < len) {
 			map.put(carr[end], map.getOrDefault(carr[end], 0) + 1);

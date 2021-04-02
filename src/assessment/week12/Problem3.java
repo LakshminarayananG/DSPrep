@@ -1,11 +1,5 @@
 package assessment.week12;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Map.Entry;
 import org.junit.Test;
 
 public class Problem3 {
@@ -84,6 +78,8 @@ public class Problem3 {
 
 	private String reverseText1(String inp) {
 		String[] split = inp.split(" ");
+		StringBuffer sb = new StringBuffer();
+		sb.setCharAt(4, inp.charAt(2));
 		if (split.length < 2)
 			return inp;
 
@@ -93,6 +89,9 @@ public class Problem3 {
 
 		return op.trim();
 	}
+	
+	
+	
 	
 	
 

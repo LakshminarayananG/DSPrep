@@ -1,0 +1,4 @@
+java -jar jenkins.war --httpPort=8088
+
+user: ajay
+pwd: ajay

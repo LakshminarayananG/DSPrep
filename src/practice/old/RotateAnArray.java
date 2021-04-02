@@ -5,7 +5,7 @@ import org.junit.Test;
 
 public class RotateAnArray {
 	
-	@Test
+	//@Test
 	public void eg1(){
 		int[] input= {1,4,7,8,10,12,3,2};
 		int rotate=3;
@@ -15,8 +15,8 @@ public class RotateAnArray {
 	
 	@Test
 	public void eg2(){
-		int[] input= {1,4,7,8,10,12,3,2};
-		int rotate=3;
+		int[] input= {1,2,3};
+		int rotate=4;
 		System.out.println(Arrays.toString(alternateApp(input, rotate)));
 	}
 	
@@ -43,9 +43,11 @@ public class RotateAnArray {
 		}
 		
 		int temp= input.length-rotate;
+		rotate(input,0,input.length-1);
+		rotate(input,temp, input.length-1);
 		rotate(input, 0, temp-1);
-		rotate(input,temp, input.length-1);		
-		rotate(input,0,input.length-1);		
+				
+				
 		return input;
 		
 	}

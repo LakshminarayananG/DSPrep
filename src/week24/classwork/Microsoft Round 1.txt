@@ -1,0 +1,44 @@
+Microsoft Interview - [30 Minutes]
+
+1) Write a program that outputs the string representation of numbers from 1 to n.
+
+But for multiples of three it should output “Fizz” instead of the number and for the multiples of five output “Buzz”. For numbers which are multiples of both three and five output “FizzBuzz”.
+
+n = 15,
+
+Return:
+[
+    "1",
+    "2",
+    "Fizz",
+    "4",
+    "Buzz",
+    "Fizz",
+    "7",
+    "8",
+    "Fizz",
+    "Buzz",
+    "11",
+    "Fizz",
+    "13",
+    "14",
+    "FizzBuzz"
+]
+
+
+2) Given a string S with both lowercase and uppercase letters, return the biggest (sorted alphabetically) letter that appears both in lowercase and uppercase. The returned letter must be in uppercase. If there is no such letter, return 'NO'.
+
+Examples:
+'aaacbAbCd', return 'C'
+'aA', return 'A'
+'abcdE', return 'NO'
+'a', return 'NO'
+
+
+3) Find the maximum possible value by inserting '5'
+
+Examples:
+input: 1234 -> output: 51234
+input: 7643 -> output 76543
+input: 0 -> output 50
+input: -661 -> output -5661

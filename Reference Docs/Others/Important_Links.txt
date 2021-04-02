@@ -6,8 +6,13 @@ https://www.geeksforgeeks.org/java-8-predicate-with-examples/
 https://leetcode.com/discuss/interview-question/344650/Amazon-Online-Assessment-Questions
 https://www.bigocheatsheet.com/
 https://www.baeldung.com/java-collections-complexity
-https://cp-algorithms.com/string/manacher.html#toc-tgt-2
+https://cp-algorithms.com/string/manacher.html
 https://martinfowler.com/
+Running behind the Google dream: https://link.medium.com/SNjEQ1i81cb
+https://hackernoon.com/14-patterns-to-ace-any-coding-interview-question-c5bb3357f6ed
+https://titusfortner.com/2021/02/03/page-factory-optimization.html
+https://www.youtube.com/watch?v=KXJSjte_OAI
+https://raw.githubusercontent.com/SeleniumHQ/selenium/trunk/java/CHANGELOG
 
 Resume:
 https://www.careercup.com/resume
